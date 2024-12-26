@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mark Attendance</title>
+</head>
+<body>
+    <h1>Mark Attendance</h1>
+    <form action="{{ url_for('mark_attendance') }}" method="POST">
+        <label for="student_id">Enter Student ID or Name: </label>
+        <input type="text" name="student_id" id="student_id" required>
+        <button type="submit">Mark Attendance</button>
+    </form>
+</body>
+</html>
